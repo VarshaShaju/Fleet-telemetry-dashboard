@@ -17,8 +17,6 @@ export default function VehicleDetail() {
 
   if (!vehicle) return null;
 
-  const MAP_COLLAPSED = 160;
-  const MAP_EXPANDED  = 360;
   const CHART_HEIGHT  = 320;
 
   const Item = ({ icon: Icon, label, value }: { icon: any; label: string; value: string }) => (
