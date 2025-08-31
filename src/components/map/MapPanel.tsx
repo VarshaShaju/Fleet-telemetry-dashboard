@@ -19,7 +19,6 @@ const stadia = (path: string) => {
   return STADIA_KEY ? `${base}?api_key=${STADIA_KEY}` : base;
 };
 
-// Dark base (true dark) + optional terrain tint overlay
 const DARK_BASE = {
   url: stadia("alidade_smooth_dark"),
   attribution:
@@ -28,7 +27,7 @@ const DARK_BASE = {
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 };
 
-// Subtle green land tint; few labels. We’ll render this on top at low opacity.
+// Subtle green land tint. We’ll render this on top at low opacity.
 const DARK_TERRAIN_OVERLAY = {
   url: stadia("terrain-background"),
   attribution:
@@ -109,7 +108,7 @@ export default function MapPanel({
           key="dark-stadia-terrain-overlay"
           url={DARK_TERRAIN_OVERLAY.url}
           attribution={DARK_TERRAIN_OVERLAY.attribution}
-          opacity={0.28}        // adjust tint strength here (0..1)
+          opacity={0.28}       
           zIndex={2}
         />
       )}
