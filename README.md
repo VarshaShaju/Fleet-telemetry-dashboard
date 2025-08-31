@@ -46,8 +46,8 @@ It simulates live data for up to 10 EVs, showing vehicle health, performance, an
 
 ### 1. Clone & Install  
 ```bash
-git clone https://github.com/your-username/ev-fleet-dashboard.git
-cd ev-fleet-dashboard
+git clone https://github.com/VarshaShaju/Fleet-telemetry-dashboard.git
+cd Fleet-telemetry-dashboard
 npm install
 ```
 
