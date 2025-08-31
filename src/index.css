@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 text-white;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 focus:ring-gray-500 text-gray-900;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-gray-800 shadow-soft rounded-lg;
+  }
+  
+  .input-field {
+    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom animations */
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.shimmer {
+  animation: shimmer 1.5s ease-in-out infinite;
+  background: linear-gradient(to right, #f6f7f8 8%, #edeef1 18%, #f6f7f8 33%);
+  background-size: 800px 104px;
+}
+
+/* Leaflet map customizations */
+.leaflet-container {
+  @apply rounded-lg;
+}
+
+.leaflet-popup-content-wrapper {
+  @apply bg-white dark:bg-gray-800 text-gray-900 dark:text-white;
+}
+
+.leaflet-popup-tip {
+  @apply bg-white dark:bg-gray-800;
+}
