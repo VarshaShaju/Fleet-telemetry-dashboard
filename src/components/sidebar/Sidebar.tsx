@@ -126,7 +126,7 @@ export default function Sidebar({ variant = "rail" }: SidebarProps) {
             onClick={() => { setOpenFilter(v => !v); setOpenSort(false); }}
             className="
               w-full px-3 py-2 rounded-lg border
-              bg-white text-slate-900 dark:bg-neutral-900 dark:text-white
+              bg-white text-slate-500 dark:bg-neutral-900 dark:text-white
               flex items-center justify-between
               hover:bg-neutral-50 dark:hover:bg-neutral-800
             "
@@ -193,7 +193,7 @@ export default function Sidebar({ variant = "rail" }: SidebarProps) {
             onClick={() => { setOpenSort(v => !v); setOpenFilter(false); }}
             className="
               w-full px-3 py-2 rounded-lg border
-              bg-white text-slate-900 dark:bg-neutral-900 dark:text-white
+              bg-white text-slate-500 dark:bg-neutral-900 dark:text-white
               flex items-center justify-between
               hover:bg-neutral-50 dark:hover:bg-neutral-800
             "

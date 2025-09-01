@@ -51,7 +51,7 @@ export default function LanguageFlagDropdown() {
         <div
           id={menuId}
           role="menu"
-          className="absolute right-0 mt-2 w-40 rounded-xl border bg-white dark:bg-neutral-900 dark:border-neutral-700 shadow-lg p-1 z-[1500]"
+          className="absolute right-0 mt-2 w-40 rounded-xl border bg-white dark:bg-neutral-900 text-slate-900 dark:text-white dark:border-neutral-700 shadow-lg p-1 z-[1500]"
         >
           <button
             role="menuitem"
